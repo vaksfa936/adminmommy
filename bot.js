@@ -233,8 +233,8 @@ return;
 } message.guild.members.forEach(m => {
    if(!message.member.hasPermission('ADMINISTRATOR')) return;
             var bc = new Discord.RichEmbed()
-            .addField(' » message : ', args)
-            .setFooter('Dating Team')
+            .addField(  message : , args)
+            .setFooter('Mommy Loves you')
             .setColor('#ff0000')
             // m.send([${m}]);
             m.send(`${m}`,{embed: bc});
