@@ -233,7 +233,7 @@ return;
 } message.guild.members.forEach(m => {
    if(!message.member.hasPermission('ADMINISTRATOR')) return;
             var bc = new Discord.RichEmbed()
-            .addMessage(' » message : ', args) 
+            .addField(' » recommended to you <3 : ', args)
             .setFooter('Mommy Loves you')
             .setColor('#ff0000')
             // m.send([${m}]);
