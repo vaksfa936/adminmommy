@@ -230,13 +230,13 @@ client.on('message', message => {
 if(message.content.split(' ')[0] == prefix + 'bc') {
     if (!args[1]) {
 return;
-}
-        message.guild.members.forEach(m => {
+} message.guild.members.forEach(m => {
    if(!message.member.hasPermission('ADMINISTRATOR')) return;
             var bc = new Discord.RichEmbed()
-            
+            .addField(' » message : ', args)
+            .setFooter('Dating Team')
             .setColor('#ff0000')
-            // m.send(`[${m}]`);
+            // m.send([${m}]);
             m.send(`${m}`,{embed: bc});
         });
     }
