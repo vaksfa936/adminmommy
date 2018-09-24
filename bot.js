@@ -235,7 +235,7 @@ return;
             var bc = new Discord.RichEmbed()
             .addMessage(' » message : ', args) 
             .setFooter('Mommy Loves you')
-            .setColor('#ff2050')
+            .setColor('#ff0000')
             // m.send([${m}]);
             m.send(`${m}`,{embed: bc});
         });
