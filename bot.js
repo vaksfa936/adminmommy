@@ -1,10 +1,10 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const prefix = '%'
-//First Love Bot By Luca Changretta
+//First Love Bot By Orochi Yagami
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`First Love | %help`,"http://twitch.tv/S-F")
+client.user.setGame(`Mommy bot by Yagami | %help`,"http://twitch.tv/S-F")
   console.log('')
   console.log('') 
   console.log('╔[═════════════════════════════════════════════════════════════════]╗')
@@ -21,7 +21,7 @@ client.user.setGame(`First Love | %help`,"http://twitch.tv/S-F")
   console.log(`channels! [ " ${client.channels.size} " ]`);
   console.log('╚[════════════════════════════════════]╝')
   console.log('╚[═══════════════════════]╝')
-  console.log(' Bot Is Online By Luca Changretta')
+  console.log(' Bot Is Online By Orochi Yagami')
   console.log('╚[═══════════════════════]╝')
   console.log('')
   console.log('')
@@ -73,7 +73,7 @@ client.on('message', message => {
     message.delete();
  let args = message.content.split(" ").slice(1);
 
-//All Rights For Larpraz 
+//All Rights For Orochi Yagami
 
     var user = message.mentions.users.first();
     var reason = args.slice(1).join(' ');
@@ -123,9 +123,9 @@ client.on('message', message => {
 
 
   client.on('voiceStateUpdate', (codes, ReBeL) => {
-if(ReBeL.voiceChannelID !== "492520698653179915") return console.log("أيرور . ");
+if(ReBeL.voiceChannelID !== "493569437807673344") return console.log("أيرور . ");
 ReBeL.guild.createChannel(ReBeL.user.username , 'voice').then((rebeeel) =>{
-    rebeeel.setParent("492527196267741192");
+    rebeeel.setParent("493569551297019906");
 ReBeL.guild.members.get(ReBeL.id).setVoiceChannel(rebeeel.id).then((codess) =>{
   console.log("تــــــم .");
   let scan = setInterval(()=>{
@@ -557,8 +557,8 @@ let reaction2Filter = (reaction, user) => reaction.emoji.name === '❌' && user.
 let reaction1 = msg.createReactionCollector(reaction1Filter, { time: 12000 });
 let reaction2 = msg.createReactionCollector(reaction2Filter, { time: 12000 });
 reaction1.on("collect", r => {
- client.channels.get("492529497329893396").send(Rembed)
- client.channels.get("492529497329893396").send("<@" + `487314985362391060` + ">" + "<@" + `183831008049627136` + ">")
+ client.channels.get("493570457698828299").send(Rembed)
+ client.channels.get("493570457698828299").send("<@" + `487314985362391060` + ">" + "<@" + `447456046563196948` + ">")
     message.reply("**# - Done! 🎇**");
 })
 reaction2.on("collect", r => {
@@ -622,12 +622,12 @@ if (command == "warn") {
     .setDescription(args.join("  "))
     .setColor(0x831f18)
     message.channel.sendEmbed(say);
-    client.channels.get("492530013003055114").send(`**=========================================**`)
-    client.channels.get("492530013003055114").send(`**New Warn !**`)
-    client.channels.get("492530013003055114").send({embed : say})
-    client.channels.get("492530013003055114").send(`**# - Admin : ${message.author.username}#${message.author.discriminator}**`)
-    client.channels.get("492530013003055114").send(`**# - In Channel : ${message.channel}**`)
-    client.channels.get("492530013003055114").send(`**==========================================**`	)
+    client.channels.get("493570891289067520").send(`**=========================================**`)
+    client.channels.get("493570891289067520").send(`**New Warn !**`)
+    client.channels.get("493570891289067520").send({embed : say})
+    client.channels.get("493570891289067520").send(`**# - Admin : ${message.author.username}#${message.author.discriminator}**`)
+    client.channels.get("493570891289067520").send(`**# - In Channel : ${message.channel}**`)
+    client.channels.get("493570891289067520").send(`**==========================================**`	)
     message.delete();
   }
 
